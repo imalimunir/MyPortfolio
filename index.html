@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ali Munir - Staff Customer Success Manager & Technical Account Manager with 15+ years driving enterprise SaaS growth, cloud architecture, and customer success.">
-    <meta name="keywords" content="Customer Success, Technical Account Manager, Enterprise SaaS, Cloud Strategy, AWS, DigitalOcean">
+    <meta name="description" content="Ali Munir - Staff Customer Success Manager &amp Technical Account Manager. 15+ years driving enterprise SaaS adoption, customer retention, and cloud architecture strategy.">
+    <meta name="keywords" content="Customer Success Manager, Technical Account Manager, TAM, CSM, Enterprise SaaS, Cloud Architecture, AWS, Azure, GCP, DigitalOcean">
     <meta name="author" content="Ali Munir">
-    <title>Ali Munir - Staff Customer Success Manager | Enterprise SaaS &amp; Cloud Strategy</title>
+    <meta property="og:title" content="Ali Munir - Staff CSM &amp Cloud Architecture Expert">
+    <meta property="og:description" content="Strategic Customer Success Leader with 15+ years driving measurable business results in enterprise SaaS and cloud strategy.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>Ali Munir - Staff Customer Success Manager & Technical Account Manager</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <nav class="nav" id="navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="nav">
         <div class="nav-container">
-            <div class="nav-brand">Ali Munir</div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <div class="nav-brand">
+                <a href="#" class="nav-logo">Ali Munir</a>
+            </div>
+            <button id="navToggle" class="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,115 +37,169 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-container">
-            <div class="hero-content fade-in">
+            <div class="hero-content fade-in-up">
                 <h1 class="hero-title">Ali Munir</h1>
-                <h2 class="hero-subtitle">Staff Customer Success Manager &amp; Technical Account Manager</h2>
-                <p class="hero-tagline">15+ Years Driving Enterprise SaaS Growth, Cloud Architecture &amp; Customer Success</p>
+                <h2 class="hero-subtitle">Staff Customer Success Manager & Technical Account Manager</h2>
+                <p class="hero-tagline">15+ Years Driving Enterprise SaaS Growth, Cloud Architecture & Customer Success</p>
                 <div class="hero-metrics">
                     <div class="metric">
-                        <span class="metric-value">30%</span>
-                        <span class="metric-label">Adoption Growth</span>
+                        <div class="metric-value-wrapper">
+                            <span class="metric-suffix">$</span>
+                            <span class="metric-value">4</span>
+                            <span class="metric-suffix">M</span>
+                        </div>
+                        <div class="metric-label">Adoption Growth</div>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">$3M</span>
-                        <span class="metric-label">Account Expansion</span>
+                        <div class="metric-value-wrapper">
+                            <span class="metric-value">30</span>
+                            <span class="metric-suffix">%</span>
+                        </div>
+                        <div class="metric-label">Account Expansion</div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-value-wrapper">
+                            <span class="metric-value">100</span>
+                            <span class="metric-suffix">%</span>
+                        </div>
+                        <div class="metric-label">Retention Rate</div>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">100%</span>
-                        <span class="metric-label">Retention Rates</span>
+                        <div class="metric-value-wrapper">
+                            <span class="metric-suffix">$</span>
+                            <span class="metric-value">132</span>
+                            <span class="metric-suffix">K</span>
+                        </div>
+                        <div class="metric-label">Annual Savings</div>
                     </div>
                 </div>
                 <div class="hero-location">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>Dresden, Germany</span>
+                    📍 Dresden, Germany | 🌍 Global Experience
                 </div>
                 <div class="hero-cta">
-                    <a href="#case-studies" class="btn btn-primary">View Case Studies</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    <a href="#case-studies" class="btn btn-primary btn-large">View Case Studies</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <!-- <a href="https://www.linkedin.com/in/i-am-ali-munir/" target="_blank" rel="noopener" class="btn btn-secondary btn-large">LinkedIn Profile</a>-->
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about">
+<!---->
+    <!-- About Section -->
+     <section id="about" class="about">
         <div class="section-container">
             <h2 class="section-title fade-in-up">About Ali</h2>
             <div class="about-content">
                 <div class="about-text fade-in-up">
                     <p class="lead">Strategic Customer Success Leader with a unique blend of deep technical expertise and exceptional relationship management skills.</p>
                     <p>With over 15 years of experience spanning enterprise SaaS, FinTech, and cloud platforms, I specialize in driving measurable business results through strategic account management, technical consulting, and customer success initiatives.</p>
-                    <p>My career has taken me across continents—from Pakistan to China, Germany, and the United States—enabling me to build strong relationships with diverse, global teams and Fortune 500 clients. I combine technical depth in cloud architecture (AWS, DigitalOcean) with strategic business acumen to deliver outcomes that matter: increased adoption, reduced churn, and accelerated revenue growth.</p>
+                    <p>My career has taken me across continents from Asia to Middle East, Europe, and the United States enabling me to build strong relationships with diverse, global teams and Fortune 500 clients. I combine technical depth in cloud architecture (AWS, DigitalOcean) with strategic business acumen to deliver outcomes that matter: increased adoption, reduced churn, and accelerated revenue growth.</p>
                     <p>Beyond technology, I'm a marathon finisher (Berlin &amp; Chicago), fluent in three languages (German, English, Urdu), and passionate about leveraging innovation to solve complex business challenges.</p>
                 </div>
                 <div class="about-highlights fade-in-up">
                     <div class="highlight-card">
                         <h3>🌍 Global Experience</h3>
-                        <p>International expertise across Pakistan, China, Germany, and United States, working with Fortune 500 enterprises</p>
+                        <p>International expertise across Europe, Asia, Middle East, and United States, working with Fortune 500 enterprises</p>
                     </div>
                     <div class="highlight-card">
                         <h3>💼 15+ Years</h3>
-                        <p>Proven track record in Enterprise SaaS, FinTech, Cloud Platforms, and Customer Success Management</p>
+                        <p>Proven track record in Enterprise SaaS, FinTech, Blockchain, Gaming, Cloud Platforms, and Customer Success Management</p>
                     </div>
                     <div class="highlight-card">
                         <h3>🗣️ Multilingual</h3>
-                        <p>Fluent in German, English, and Urdu—enabling seamless communication across diverse markets</p>
+                        <p>Fluent in German, English, and Urdu; enabling seamless communication across diverse markets</p>
                     </div>
                     <div class="highlight-card">
                         <h3>🏃 Marathon Runner</h3>
-                        <p>Berlin &amp; Chicago Marathon finisher—bringing the same dedication and perseverance to customer success</p>
+                        <p>Berlin &amp; Chicago Marathon finisher; bringing the same dedication and perseverance to customer success</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- CASE STUDIES SECTION -->
+    <!--
+    <section id="about" class="about fade-in-up">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Strategic Customer Success Leader and Staff Technical Account Manager with 15+ years of proven excellence in driving enterprise SaaS adoption, retention, and cloud transformation.</p>
+                    <p>I combine deep technical expertise in cloud architecture (AWS, DigitalOcean, Azure) with consultative relationship management to deliver transformational outcomes. Known for translating complex technical challenges into strategic business opportunities.</p>
+                    <p>My global journey—from Pakistan to China, Germany, and the US—has equipped me to work effectively with Fortune 500 enterprises, diverse teams, and cross-cultural stakeholders.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card fade-in-up">
+                        <h3>🌍 Global Experience</h3>
+                        <p>Pakistan • China • Germany • United States. Fluent in German, English, and Urdu.</p>
+                    </div>
+                    <div class="highlight-card fade-in-up">
+                        <h3>🚀 Enterprise Focus</h3>
+                        <p>FinTech • SaaS • Cloud Platforms • AI/ML • Blockchain • Insurance</p>
+                    </div>
+                    <div class="highlight-card fade-in-up">
+                        <h3>💪 Athlete</h3>
+                        <p>Berlin & Chicago Marathon Finisher. Driven by continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     -->
+    <!-- Case Studies Section -->
     <section id="case-studies" class="case-studies">
         <div class="section-container">
-            <h2 class="section-title fade-in-up">Case Studies</h2>
-            <p class="section-subtitle fade-in-up">Proven results across enterprise SaaS and cloud transformation initiatives</p>
+            <h2 class="section-title fade-in-up">Case Studies & Impact</h2>
+            <p class="section-subtitle fade-in-up">Proven track record of delivering transformational business outcomes across enterprise customers</p>
             
             <div class="cases-grid">
-                <!-- Case Study 1 -->
+                <!-- Case Study 1: Product Dashboard -->
                 <div class="case-card fade-in-up">
                     <div class="case-number">01</div>
                     <h3 class="case-title">DigitalOcean Product Intelligence Dashboard</h3>
                     <div class="case-section">
-                        <h4>Problem</h4>
-                        <p>Internal teams lacked unified access to product insights across 35+ product lines, leading to inefficient enablement and inconsistent customer engagement.</p>
+                        <h4>Metrics</h4>
+                        <p>35+ Product Lines • 20% Enablement Reduction • 100% Team Adoption</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>Internal teams lacked unified access to product insights across 35+ product lines, leading to inefficient enablement.</p>
                     </div>
                     <div class="case-section">
                         <h4>Solution</h4>
-                        <p>Built a comprehensive dashboard aggregating product data, competitive insights, and feature tracking to provide instant access to up-to-date product information.</p>
+                        <p>Built comprehensive dashboard aggregating product data, competitive insights, and feature tracking.</p>
                     </div>
                     <div class="case-section">
                         <h4>Impact</h4>
-                        <ul class="case-impact">
-                            <li>20% reduction in sales and CS enablement time</li>
-                            <li>Enhanced customer engagement through better product knowledge</li>
-                            <li>Streamlined internal processes across multiple teams</li>
-                        </ul>
+                        <div class="case-impact">
+                            <li>Reduced enablement time by 20%</li>
+                            <li>Achieved 100% team adoption</li>
+                            <li>Enhanced customer engagement quality</li>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="case-study-product-dashboard.html" class="btn btn-primary">View Details</a>
+                        <a href="https://product-intelligence-dashboard-maa6y.ondigitalocean.app/" target="_blank" rel="noopener" class="btn btn-secondary">Live Dashboard</a>
                     </div>
                 </div>
 
-                <!-- Case Study 2 -->
+                <!-- Case Study 2: Cloud Architecture -->
                 <div class="case-card fade-in-up">
                     <div class="case-number">02</div>
-                    <h3 class="case-title">Enterprise Cloud Architecture Optimization</h3>
+                    <h3 class="case-title">Cloud Architecture Optimization</h3>
                     <div class="case-section">
-                        <h4>Problem</h4>
-                        <p>Enterprise clients were underutilizing cloud platforms and experiencing high operational costs due to inefficient architecture and resource allocation.</p>
+                        <h4>Metrics</h4>
+                        <p>15-25% Cost Reduction • $79-132K Annual Savings • Zero-Trust Security</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>Enterprise clients faced $44K/month infrastructure costs with no optimization visibility and fragmented security.</p>
                     </div>
                     <div class="case-section">
                         <h4>Solution</h4>
-                        <p>Led comprehensive architecture reviews, strategic workshops, Quarterly Business Reviews (QBRs), and optimization initiatives tailored to each client's needs.</p>
+                        <p>Comprehensive architecture review identifying consolidation, right-sizing, and automation opportunities.</p>
                     </div>
                     <div class="case-section">
                         <h4>Impact</h4>
@@ -151,61 +209,80 @@
                             <li>30% growth in platform adoption</li>
                         </ul>
                     </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="case-study-cloud-architecture.html" class="btn btn-primary">View Details</a>
+                        <!--<a href="case-study-cloud-architecture.html#charts" class="btn btn-secondary">Interactive Charts</a>-->
+                    </div>
                 </div>
 
-                <!-- Case Study 3 -->
+                <!-- Case Study 3: Customer Success -->
                 <div class="case-card fade-in-up">
                     <div class="case-number">03</div>
-                    <h3 class="case-title">Customer Success &amp; Retention Excellence</h3>
+                    <h3 class="case-title">Customer Success Excellence</h3>
                     <div class="case-section">
-                        <h4>Problem</h4>
-                        <p>SaaS customer churn challenges despite strong product offerings, with limited C-level engagement and strategic relationship management.</p>
+                        <h4>Metrics</h4>
+                        <p>$3M Revenue Expansion • 100% Retention • 8% Churn Reduction</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>SaaS customer churn despite strong product offerings, limited C-level engagement and strategic alignment.</p>
                     </div>
                     <div class="case-section">
                         <h4>Solution</h4>
-                        <p>Implemented structured Executive Business Reviews (EBRs) and developed a comprehensive C-level engagement model to align technology with business outcomes.</p>
+                        <p>Implemented structured Executive Business Reviews (EBRs) and comprehensive C-level engagement model.</p>
                     </div>
                     <div class="case-section">
                         <h4>Impact</h4>
                         <ul class="case-impact">
-                            <li>100% retention rate across managed accounts</li>
-                            <li>8% overall churn reduction</li>
-                            <li>30% increase in customer referrals</li>
+                            <li>Expanded $3M+ account portfolio</li>
+                            <li>Achieved 100% retention rate</li>
+                            <li>Generated 30% referral growth</li>
                         </ul>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="case-study-customer-success.html" class="btn btn-primary">View Details</a>
                     </div>
                 </div>
 
-                <!-- Case Study 4 -->
+                <!-- Case Study 4: Digital Transformation -->
                 <div class="case-card fade-in-up">
                     <div class="case-number">04</div>
-                    <h3 class="case-title">Fortune-500 Digital Transformation</h3>
+                    <h3 class="case-title">Fortune-500 Digital Transformation (Manulife)</h3>
                     <div class="case-section">
-                        <h4>Problem</h4>
-                        <p>Legacy communication platforms were limiting enterprise client growth and productivity, requiring comprehensive digital transformation.</p>
+                        <h4>Metrics</h4>
+                        <p>90-Second Policy Issuance • 18K New Customers • 96% Satisfaction</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>Legacy distribution platform limiting enterprise growth; policy issuance taking 7-10 days.</p>
                     </div>
                     <div class="case-section">
                         <h4>Solution</h4>
-                        <p>Led end-to-end cloud-based Customer Communication Management (CCM) transformation, including architecture design, migration strategy, and change management.</p>
+                        <p>Led end-to-end cloud-based transformation including architecture design and migration strategy.</p>
                     </div>
                     <div class="case-section">
                         <h4>Impact</h4>
                         <ul class="case-impact">
-                            <li>178% account growth to $5M portfolio value</li>
-                            <li>200% improvement in team productivity</li>
-                            <li>Successful enterprise-wide digital transformation</li>
+                            <li>Reduced issuance to 90 seconds</li>
+                            <li>Attracted 18K new customers</li>
+                            <li>Achieved 96% satisfaction rating</li>
                         </ul>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="case-study-digital-transformation.html" class="btn btn-primary">View Details</a>
+                         <a href="https://www.gartner.com/en/documents/3621417" target="_blank" rel="noopener" class="btn btn-secondary">Read Gartner Case Study</case-study></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS & EXPERTISE SECTION -->
-    <section id="skills" class="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="skills fade-in-up">
         <div class="section-container">
-            <h2 class="section-title fade-in-up">Skills &amp; Expertise</h2>
+            <h2 class="section-title">Expertise & Skills</h2>
             <p class="section-subtitle fade-in-up">Technical depth meets strategic business acumen</p>
-            
+           
             <div class="skills-grid">
                 <!-- Customer Success & Strategy -->
                 <div class="skill-category fade-in-up">
@@ -296,116 +373,97 @@
         </div>
     </section>
 
-    <!-- AWARDS & RECOGNITION SECTION -->
-    <section id="awards" class="awards">
+    <!-- Awards Section -->
+    <section id="awards" class="awards fade-in-up">
         <div class="section-container">
-            <h2 class="section-title fade-in-up">Awards &amp; Recognition</h2>
+            <h2 class="section-title">Awards & Recognition</h2>
             <p class="section-subtitle fade-in-up">Recognized for excellence in customer success and technical leadership</p>
             
             <div class="awards-grid">
                 <div class="award-card fade-in-up">
                     <div class="award-year">Q1 2025</div>
                     <h3>Most Valuable Professional (MVP)</h3>
-                    <p class="award-company">DigitalOcean</p>
+                    <p>DigitalOcean</p>
                 </div>
                 <div class="award-card fade-in-up">
                     <div class="award-year">Q2 2025</div>
                     <h3>Dream Team</h3>
-                    <p class="award-company">DigitalOcean</p>
+                    <p>DigitalOcean</p>
                 </div>
                 <div class="award-card fade-in-up">
-                    <div class="award-year">2022 &amp; 2023</div>
-                    <h3>Service Excellence</h3>
-                    <p class="award-company">DigitalOcean</p>
+                    <div class="award-year">2022 & 2023</div>
+                    <h3>Service Excellence Award</h3>
+                    <p>DigitalOcean</p>
                 </div>
                 <div class="award-card fade-in-up">
                     <div class="award-year">2022</div>
                     <h3>Special Recognition Award</h3>
-                    <p class="award-company">DigitalOcean</p>
+                    <p>DigitalOcean</p>
                 </div>
                 <div class="award-card fade-in-up">
                     <div class="award-year">2021</div>
                     <h3>Salesperson of the Year</h3>
-                    <p class="award-company">Elixir Technologies</p>
+                    <p>Elixir Technologies</p>
                 </div>
+                <a href="https://www.gartner.com/en/documents/3621417" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+  <div class="award-card fade-in-up">
+    <div class="award-year">Published</div>
+    <h3>Gartner Case Study</h3>
+    <p>WeChat-Enabled Insurance</p>
+  </div>
+</a>
             </div>
+        </div>
+    </section>
 
-            <!-- Certifications -->
-            <div class="certifications fade-in-up">
-                <h3 class="certifications-title">Professional Certifications</h3>
-                <div class="cert-list">
-                    <div class="cert-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>AWS Certified Solutions Architect – Associate</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>AWS Certified Cloud Practitioner</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>AI Agents Fundamentals (Hugging Face)</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>Customer Success Leader Certified Professional</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>Advanced Customer Success Manager Certified Professional</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>Zertifikat telc Deutsch B2</span>
-                    </div>
+    <!-- Credentials Section -->
+    <section class="credentials fade-in-up">
+        <div class="section-container">
+            <h2 class="section-title">Certifications & Publications</h2>
+            <p class="section-subtitle fade-in-up">Recognized for excellence in customer success and technical leadership</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
+                <div>
+                    <h3 style="color: #38b2ac; margin-bottom: 1.5rem; font-size: 1.25rem;">Certifications</h3>
+                    <ul style="list-style: none;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                            <a href="https://www.credly.com/badges/c1bb924c-88b5-4130-a080-92d43ca1d885/public_url" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">AWS Certified Solutions Architect – Associate</a>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                            <a href="https://www.credly.com/badges/7d067485-0aa5-4210-87c3-a3992e4034b5/public_url" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">AWS Certified Cloud Practitioner</a>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                            <a href="https://cas-bridge.xethub.hf.co/xet-bridge-us/67a47037749ea2c4b9fafd4b/5a0790db985ddecb0e4e66c2b2a825884cb6fe1dd917f499205a380724ec7882?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251028%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251028T094241Z&X-Amz-Expires=3600&X-Amz-Signature=3580d83b3d3f0afb87dda14d801dac5c428cfc2709f359034b12abea8ddb9db1&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-03-03.png%3B+filename%3D%222025-03-03.png%22%3B&response-content-type=image%2Fpng&x-id=GetObject&Expires=1761648161&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MTY0ODE2MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82N2E0NzAzNzc0OWVhMmM0YjlmYWZkNGIvNWEwNzkwZGI5ODVkZGVjYjBlNGU2NmMyYjJhODI1ODg0Y2I2ZmUxZGQ5MTdmNDk5MjA1YTM4MDcyNGVjNzg4MioifV19&Signature=eS4LhRn6KuBmH34jcNs1rrR1eqRaBmH7zuMu8xS2PJ11NT4bZaTfZ9CBoDEQkAQfVldiuAmz4rBnZNP-giozY57yOYnjZYmlccjJqm8TKICZ9E-02K8CZImdxzpx4-JaWMLZy1Wf4BCJ0NMR9OT9veiWDSAEHhy3wkFCuxYq8n1A8DDdckOTrEjl-ofSE66XvP62G17s07eQ-5BxUqoIy5qRi1nMQ4o6wwlawAeWk3f8FTVRHVzYvM5hhCASSIchBjPNWnMAeGVxZcwCfTDuU4%7EGd4M6T0wbt9kbxdrAGgxr0kkTHl2d5McEahpToTdtgKwQqdSeXv-XD7kyG7a1Lw__&Key-Pair-Id=K2L8F4GPSG1IFC" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">AI Agents Fundamentals (Hugging Face)</a>
+                        </li>
+                        <li style="padding: 0.75rem 0;">
+                            <a href="https://www.credly.com/badges/02e6409e-996a-4b94-a7db-162e70bebd17/public_url" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">Gainsight Success Leader Certified Professional</a>
+
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-            <!-- Publications -->
-            <div class="publications fade-in-up">
-                <h3 class="publications-title">Publications &amp; Thought Leadership</h3>
-                <div class="pub-list">
-                    <div class="pub-item">
-                        <h4>Sharks of DigitalOcean: Ali Munir</h4>
-                        <p>DigitalOcean</p>
-                    </div>
-                    <div class="pub-item">
-                        <h4>Manulife Uses WeChat to Improve Customer Experience</h4>
-                        <p>Gartner</p>
-                    </div>
-                    <div class="pub-item">
-                        <h4>Intrusion Detection System for IP Multimedia Subsystem using K-Nearest Neighbor classifier</h4>
-                        <p>IEEE</p>
-                    </div>
-                    <div class="pub-item">
-                        <h4>Analysis of rule based look-ahead strategy using Pacman testbed</h4>
-                        <p>IEEE</p>
-                    </div>
+                <div>
+                    <h3 style="color: #38b2ac; margin-bottom: 1.5rem; font-size: 1.25rem;">Publications & Media</h3>
+                    <ul style="list-style: none;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                            <a href="https://www.digitalocean.com/blog/shark-tales-ali-munir-staff-technical-account-manager" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">Shark Tales Interview (DigitalOcean Blog)</a>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                            <a href="https://www.gartner.com/en/documents/3621417" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">Gartner Case Study: WeChat-Enabled Insurance Transformation</a>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                            <a href="https://ieeexplore.ieee.org/document/4777775" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">IEEE: Intrusion Detection System for IMS</a>
+                        </li>
+                        <li style="padding: 0.75rem 0;">
+                            <a href="https://ieeexplore.ieee.org/document/5952723" target="_blank" rel="noopener" style="color: #1a202c; font-weight: 500;">IEEE: Rule-Based Look-Ahead Strategy</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
+   <!-- CONTACT SECTION -->
+    <section id="contact" class="contact fade-in-up">
         <div class="section-container">
             <div class="contact-content">
                 <div class="contact-info fade-in-up">
@@ -466,14 +524,14 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Ali Munir. All rights reserved.</p>
-            <p class="footer-tagline">Driving measurable results through strategic customer success and technical excellence.</p>
+    <!-- Footer -->
+    <footer style="background-color: #0f172a; color: white; padding: 2rem; text-align: center; border-top: 1px solid #e5e7eb;">
+        <div class="section-container">
+            <p>&copy; 2025 Ali Munir. All rights reserved. | <a href="https://www.linkedin.com/in/i-am-ali-munir/" target="_blank" rel="noopener" style="color: #38b2ac;">LinkedIn</a></p>
+            <p class="footer-tagline">Driving measurable results through strategic customer success and technical excellence.</p>        
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

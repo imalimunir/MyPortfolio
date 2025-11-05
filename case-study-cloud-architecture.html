@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Architecture Optimization - Ali Munir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="section-container">
+            <div class="nav-brand"><a href="index.html" class="nav-logo">Ali Munir</a></div>
+            <ul id="navMenu" class="nav-menu" style="flex-direction: row;">
+                <li><a href="index.html#case-studies" class="nav-link">← Back to Case Studies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Enterprise Cloud Architecture Optimization</h1>
+                <p class="hero-tagline">Strategic review delivering 15-25% cost reduction with enhanced security</p>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <div class="metric-value-wrapper">
+                            <span class="metric-value">15</span>
+                            <span class="metric-suffix">-</span>
+                            <span class="metric-value">25</span>
+                            <span class="metric-suffix">%</span>
+                        </div>
+                        <div class="metric-label">Cost Reduction</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value-wrapper">
+                            <span class="metric-suffix">$</span>
+                            <span class="metric-value">79</span>
+                            <span class="metric-suffix">K-</span>
+                            <span class="metric-value">132</span>
+                            <span class="metric-suffix">K</span>
+                        </div>                        
+                        <div class="metric-label">Annual Savings</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value-wrapper">
+                            <span class="metric-value">16</span>
+                            <span class="metric-suffix">→</span>
+                            <span class="metric-value">14</span>
+                        </div>
+                        <div class="metric-label">Clusters</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value-wrapper">
+                            <span class="metric-value">651</span>
+                            <span class="metric-suffix">→</span>
+                            <span class="metric-value">520</span>
+                        </div>
+                        <div class="metric-label">Nodes Reduction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 3rem 0; background-color: white;">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: 1fr 300px; gap: 2rem;">
+                <div>
+                    <h2 style="margin-bottom: 1.5rem; border-bottom: 2px solid #38b2ac; padding-bottom: 1rem;">Executive Summary</h2>
+                    <p style="font-size: 1.1rem; color: #4b5563; line-height: 1.8; margin-bottom: 1.5rem;">Multi-tenant SaaS platform faced critical infrastructure challenges: rapidly growing monthly costs of $44K, fragmented security across regions, and operational complexity. Through comprehensive 6-8 week review, identified $79-132K annual savings while strengthening security and enabling AI/ML workloads.</p>
+
+                    <h2 style="margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #38b2ac; padding-bottom: 1rem;">The Challenge</h2>
+                    <ul style="list-style: disc; margin-left: 2rem; color: #4b5563;">
+                        <li style="margin-bottom: 0.75rem;">16 Kubernetes clusters spanning US, UK, EU, CA with 651 nodes</li>
+                        <li style="margin-bottom: 0.75rem;">Monthly infrastructure spend of $44,000 with no optimization visibility</li>
+                        <li style="margin-bottom: 0.75rem;">Fragmented security architecture across regions</li>
+                        <li style="margin-bottom: 0.75rem;">Manual processes limiting agility</li>
+                        <li>Infrastructure not architected for future AI/ML workloads</li>
+                    </ul>
+
+                    <h2 id="charts" style="margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #38b2ac; padding-bottom: 1rem;">Architecture Optimization: Interactive Analysis</h2>
+                    <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <canvas id="optimizationChart" style="max-height: 300px;"></canvas>
+                    </div>
+
+                    <h3 style="color: #1a202c; margin-bottom: 1rem;">Current vs Optimized Comparison</h3>
+                    <table style="width: 100%; border-collapse: collapse; background-color: white; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+                        <thead style="background-color: #1a202c; color: white;">
+                            <tr>
+                                <th style="padding: 1rem; text-align: left; border-right: 1px solid #e5e7eb;">Component</th>
+                                <th style="padding: 1rem; text-align: left; border-right: 1px solid #e5e7eb;">Current</th>
+                                <th style="padding: 1rem; text-align: left; border-right: 1px solid #e5e7eb;">Optimized</th>
+                                <th style="padding: 1rem; text-align: left;">Benefit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: white; border-bottom: 1px solid #e5e7eb;">
+                                <td style="padding: 1rem; color: #4b5563;">K8s Clusters</td>
+                                <td style="padding: 1rem; color: #4b5563;">16</td>
+                                <td style="padding: 1rem; color: #4b5563;">14</td>
+                                <td style="padding: 1rem; color: #4b5563;">Consolidation</td>
+                            </tr>
+                            <tr style="background-color: #f9fafb; border-bottom: 1px solid #e5e7eb;">
+                                <td style="padding: 1rem; color: #4b5563;">Compute Nodes</td>
+                                <td style="padding: 1rem; color: #4b5563;">651</td>
+                                <td style="padding: 1rem; color: #4b5563;">520</td>
+                                <td style="padding: 1rem; color: #4b5563;">Right-sized</td>
+                            </tr>
+                            <tr style="background-color: white; border-bottom: 1px solid #e5e7eb;">
+                                <td style="padding: 1rem; color: #4b5563;">Auto-Scaling</td>
+                                <td style="padding: 1rem; color: #4b5563;">Standard</td>
+                                <td style="padding: 1rem; color: #4b5563;">Scale-to-Zero AI</td>
+                                <td style="padding: 1rem; color: #4b5563;">Cost Optimized</td>
+                            </tr>
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: 1rem; color: #4b5563;">Monthly Cost</td>
+                                <td style="padding: 1rem; color: #4b5563;">$44,000</td>
+                                <td style="padding: 1rem; color: #4b5563;">$33-37K</td>
+                                <td style="padding: 1rem; color: #4b5563;">$7-11K savings</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 style="margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #38b2ac; padding-bottom: 1rem;">Strategic Recommendations</h2>
+                    <ul style="list-style: disc; margin-left: 2rem; color: #4b5563;">
+                        <li style="margin-bottom: 0.75rem;">Enable scale-to-zero for dev/test environments (Quick Win)</li>
+                        <li style="margin-bottom: 0.75rem;">Implement zero-trust architecture and RBAC hardening</li>
+                        <li style="margin-bottom: 0.75rem;">Deploy Kubecost for real-time cost visibility</li>
+                        <li style="margin-bottom: 0.75rem;">Consolidate underutilized clusters</li>
+                        <li>Migrate to Gateway API from traditional ingress</li>
+                    </ul>
+
+                    <h2 style="margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #38b2ac; padding-bottom: 1rem;">Results</h2>
+                    <ul style="list-style: disc; margin-left: 2rem; color: #4b5563;">
+                        <li style="margin-bottom: 0.75rem;">$79-132K annual infrastructure cost reduction</li>
+                        <li style="margin-bottom: 0.75rem;">2-3 month ROI on implementation</li>
+                        <li style="margin-bottom: 0.75rem;">Compliance readiness for SOC 2, ISO 27001, GDPR</li>
+                        <li style="margin-bottom: 0.75rem;">Automation reduced manual operations workload</li>
+                        <li>Infrastructure positioned for AI/ML workload integration</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 8px; border: 1px solid #e5e7eb;">
+                        <h4 style="color: #1a202c; margin-bottom: 1rem;">Skills</h4>
+                        <ul style="list-style: none; color: #4b5563; font-size: 0.95rem;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">Cloud Architecture</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">Cost Optimization</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">Security Architecture</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">Kubernetes</li>
+                            <li style="padding: 0.5rem 0;">Infrastructure Analysis</li>
+                        </ul>
+                    </div>
+                    <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 8px; border: 1px solid #e5e7eb; margin-top: 1rem;">
+                        <h4 style="color: #1a202c; margin-bottom: 1rem;">Technologies</h4>
+                        <ul style="list-style: none; color: #4b5563; font-size: 0.95rem;">
+                            <li style="padding: 0.5rem 0;">Kubernetes</li>
+                            <li style="padding: 0.5rem 0;">Terraform</li>
+                            <li style="padding: 0.5rem 0;">Docker</li>
+                            <li style="padding: 0.5rem 0;">Kubecost</li>
+                            <li style="padding: 0.5rem 0;">Prometheus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #0f172a; color: white; padding: 2rem; text-align: center;">
+        <div class="section-container">
+            <p>&copy; 2025 Ali Munir. All rights reserved.</p>
+            <p class="footer-tagline">Driving measurable results through strategic customer success and technical excellence.</p>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('optimizationChart');
+            if (ctx) {
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Clusters', 'Nodes', 'Cost (Thousands)'],
+                        datasets: [
+                            {
+                                label: 'Current State',
+                                data: [16, 651, 44],
+                                backgroundColor: 'rgba(239, 68, 68, 0.7)',
+                                borderColor: 'rgba(239, 68, 68, 1)',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Optimized State',
+                                data: [14, 520, 35],
+                                backgroundColor: 'rgba(16, 185, 129, 0.7)',
+                                borderColor: 'rgba(16, 185, 129, 1)',
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: { position: 'bottom' }
+                        },
+                        scales: {
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

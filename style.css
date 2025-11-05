@@ -80,10 +80,17 @@
   --color-info-rgb: 98, 108, 113;
 
   /* Typography */
-  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+ /* --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
     Monaco, Consolas, monospace;
+ /* Base sans-serif fonts: original first, modern fallbacks later */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", "Montserrat", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+  /* Monospace fonts: original first, modern fallbacks later */
+  --font-family-mono: "Berkeley Mono", "SF Mono", "ui-monospace", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+
+    
   --font-size-xs: 11px;
   --font-size-sm: 12px;
   --font-size-base: 14px;
@@ -313,6 +320,8 @@ body {
   padding: 0;
 }
 
+
+
 *,
 *::before,
 *::after {
@@ -350,6 +359,12 @@ h5 {
 }
 h6 {
   font-size: var(--font-size-md);
+}
+.hero-metrics .metric-number {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
 }
 
 p {
@@ -1061,6 +1076,11 @@ section {
   flex-direction: column;
 }
 
+.metric-value-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+}
+
 .metric-value {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
@@ -1072,6 +1092,13 @@ section {
   color: var(--gray-300);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.metric-suffix {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--teal-light);
+  margin-left: 0.1em;    /* spacing between number and suffix */
 }
 
 .hero-location {
@@ -1403,7 +1430,7 @@ section {
 
 /* CONTACT SECTION */
 .contact {
-  background-color: var(--white);
+  background-color: var(--gray-50);
 }
 
 .contact-content {
@@ -1623,4 +1650,5 @@ section {
   .case-title {
     font-size: var(--font-size-xl);
   }
+
 }
